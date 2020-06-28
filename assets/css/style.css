@@ -1,7 +1,36 @@
+/******************************
+
+[Таблица контента]
+
+1. Общий css код
+2. Хеадер
+3. СайдБар
+...Футер
+
+
+******************************/
+
+/*
+1. Начало общего css кода
+*/
+
 * {
   margin: 0;
   padding: 0;
 }
+
+.main {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*
+1. Конец общего css кода
+*/
+
+/*
+2. Начало css кода Хеадера
+*/
 
 .header {
   background-color: darkslateblue;
@@ -12,11 +41,8 @@
   min-width: 900px;
 }
 
-.main,
 .logo,
-.menubar,
-.site_content,
-.footer {
+.menubar {
   margin-left: auto;
   margin-right: auto;
 }
@@ -80,11 +106,21 @@ ul.menu li a:hover {
   color: #e4ec04;
 }
 
+/*
+2. Конец css кода Хеадера
+*/
+
+/*
+3. Начало css кода СайдБара
+*/
+
 .site_content {
   width: 880px;
   overflow: hidden;
   margin: 20px auto 0 auto;
   background-color: white;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .sidebar_container {
@@ -101,3 +137,19 @@ ul.menu li a:hover {
   border-radius: 5px;
   background-color: #f9f9f9;
 }
+
+/*
+3. Конец css кода СайдБара
+*/
+
+/*
+Начало css кода Футера
+*/
+.footer {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*
+Конец css кода Футера
+*/
