@@ -7,7 +7,6 @@
 3. СайдБар
 ...Футер
 
-
 ******************************/
 
 /*
@@ -22,6 +21,21 @@
 .main {
   margin-left: auto;
   margin-right: auto;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="search"] {
+  color: #5d5d5d;
+  width: 60%;
+  padding: 8px;
+}
+
+input,
+textarea {
+  outline: none;
+  border: none;
+  border: solid 1px #f2f2f2;
 }
 
 /*
@@ -136,6 +150,12 @@ ul.menu li a:hover {
   border: solid 1px #f2f2f2;
   border-radius: 5px;
   background-color: #f9f9f9;
+}
+
+.btn {
+  padding: 8px;
+  background-color: white;
+  cursor: pointer;
 }
 
 /*
