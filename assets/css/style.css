@@ -1,18 +1,4 @@
-/******************************
-
-[Таблица контента]
-
-1. Общий css код
-2. Хеадер
-3. СайдБар
-4. Основной Контент
-...Футер
-
-******************************/
-
-/*
-1. Начало общего css кода
-*/
+/* Общий CSS код*/
 
 * {
   margin: 0;
@@ -41,7 +27,7 @@ textarea {
 
 h1,
 h2 {
-  font: normal 170% 'century gothic', arial;
+  font: normal 170% "century gothic", arial;
   margin: 0 0 15px 0;
   padding: 15px 0 5px 0;
   color: #000;
@@ -83,13 +69,7 @@ hr {
   border: 1px solid #f3f3f3;
 }
 
-/*
-1. Конец общего css кода
-*/
-
-/*
-2. Начало css кода Хеадера
-*/
+/* CSS код Хеадера */
 
 .header {
   background-color: darkslateblue;
@@ -165,13 +145,7 @@ ul.menu li a:hover {
   color: #e4ec04;
 }
 
-/*
-2. Конец css кода Хеадера
-*/
-
-/*
-3. Начало css кода СайдБара
-*/
+/* CSS код СайдБара */
 
 .site_content {
   width: 880px;
@@ -226,13 +200,7 @@ ul.menu li a:hover {
   float: right;
 }
 
-/*
-3. Конец css кода СайдБара
-*/
-
-/*
-4. Начало css кода Основного Контента
-*/
+/* CSS код Основного Контента */
 
 .content {
   text-align: left;
@@ -358,13 +326,31 @@ textarea {
   color: white;
 }
 
-/*
-4. Конец css кода Основного Контента
-*/
+table {
+  width: 100%;
+  border: solid 1px #f4f4f4;
+}
 
-/*
-Начало css кода Футера
-*/
+td {
+  padding: 2%;
+  border: solid 1px #f4f4f4;
+}
+
+.content td img {
+  width: 200px;
+  height: 100px;
+  vertical-align: middle;
+}
+
+.center {
+  text-align: center;
+}
+
+.rating {
+  font-weight: bold;
+}
+
+/* CSS код Футера */
 
 .footer {
   margin-left: 0px;
@@ -392,6 +378,153 @@ textarea {
   padding: 0 0 10px 0;
 }
 
-/*
-Конец css кода Футера
-*/
+/* CSS Mobile */
+@media only screen and (min-device-width: 300px) and (max-device-width: 600px) {
+  .header {
+    background-color: #257965;
+    min-width: 100%;
+    height: 20%;
+    text-align: center;
+  }
+
+  .logo {
+    width: 100%;
+  }
+
+  .site_content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .menubar {
+    width: 100%;
+    height: 100%;
+  }
+
+  .content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .sidebar_container {
+    display: none;
+  }
+
+  .footer {
+    display: none;
+  }
+
+  ul.menu {
+    float: none;
+  }
+
+  ul.menu li {
+    margin: 0;
+    padding: 0;
+    float: none;
+  }
+
+  .logo h1 {
+    font: normal 235% "century gothic", arial, sans-serif;
+  }
+
+  .logo h2 {
+    font: normal 100% "century gothic", arial, sans-serif;
+    color: white;
+  }
+
+  .content h1,
+  h2 {
+    font: normal 110% "century gothic", arial;
+  }
+
+  .films_block img {
+    width: 80%;
+  }
+
+  .posts_content p {
+    line-height: 1.5em;
+    padding: 3%;
+    text-align: left;
+  }
+
+  .posts p {
+    font-size: 120%;
+  }
+
+  /* films page */
+
+  .info_film {
+    float: none;
+    height: 100%;
+  }
+
+  .info_film img {
+    float: none;
+    width: 90%;
+    height: 90%;
+    margin-bottom: 5%;
+  }
+
+  .button {
+    float: none;
+  }
+
+  /* rating page */
+  .table {
+    display: block;
+  }
+
+  th {
+    font-size: 75%;
+  }
+
+  td {
+    padding: 0;
+    margin: 0;
+    font-size: 95%;
+    text-align: left;
+  }
+
+  .content td img {
+    width: 150px;
+    height: 80px;
+  }
+
+  /* show page */
+  iframe {
+    width: 88%;
+    height: 100%;
+  }
+
+  .description_film {
+    width: 90%;
+    text-align: left;
+    margin-left: 2%;
+  }
+
+  .description_film img {
+    float: none;
+    width: 88%;
+    height: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 7%;
+  }
+
+  .reviews {
+    text-align: left;
+    width: 96%;
+  }
+
+  .send input[type="text"] {
+    width: 88%;
+  }
+
+  .send textarea {
+    width: 93%;
+  }
+}
